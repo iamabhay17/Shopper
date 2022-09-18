@@ -10,7 +10,6 @@
 <p align="center">
   <a href="#key-features">Key Features</a> •
   <a href="#how-to-use">How To Use</a> •
-  <a href="#download">Download</a> 
 </p>
 
 
@@ -41,6 +40,6 @@ $ npm start
 
 
 
-> [Abhay](https://www.iamabhay17.netlify.app) &nbsp;&middot;&nbsp;
-> GitHub [@aiamabhay17](https://github.com/iamabhay17) &nbsp;&middot;&nbsp;
+> Website [Abhay Bhardwaj](https://www.iamabhay17.netlify.app) &nbsp;&middot;&nbsp;
+> GitHub [@iamabhay17](https://github.com/iamabhay17) &nbsp;&middot;&nbsp;
 
