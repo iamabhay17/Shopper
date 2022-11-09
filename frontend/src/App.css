@@ -1,0 +1,13 @@
+main
+{
+    min-height: 75vh;
+}
+.icon
+{
+    font-size: 1rem;
+    margin: 0 1px 4px;
+}
+.rating-icon
+{
+    color: gold;
+}
