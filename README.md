@@ -12,6 +12,8 @@
   <a href="#how-to-use">How To Use</a> •
 </p>
 
+* email : example@gmail.com
+* password : 123456
 
 ## Key Features
 * Full stack E-commerce app
