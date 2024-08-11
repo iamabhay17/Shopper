@@ -2,7 +2,7 @@ import axios from "axios";
 
 export const addToCart = (id, qty) => async (dispatch, getState) => {
   const { data } = await axios.get(
-    `https://shopper-wmd5.onrender.com/api/products/${id}`
+    `https://shopper-api.vercel.app/api/products/${id}`
   );
 
   dispatch({
