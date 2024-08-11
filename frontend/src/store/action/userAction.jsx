@@ -10,7 +10,7 @@ export const login = (email, password) => async (dispatch) => {
       },
     };
     const { data } = await axios.post(
-      "https://shopper-wmd5.onrender.com/api/users/login",
+      "https://shopper-api.vercel.app/api/users/login",
       { email, password },
       config
     );
@@ -55,7 +55,7 @@ export const register = (name, email, password) => async (dispatch) => {
       },
     };
     const { data } = await axios.post(
-      "https://shopper-wmd5.onrender.com/api/users/register",
+      "https://shopper-api.vercel.app/api/users/register",
       { email, password, name },
       config
     );
@@ -100,7 +100,7 @@ export const getUserDetails = (id) => async (dispatch, getState) => {
       },
     };
     const { data } = await axios.get(
-      `https://shopper-wmd5.onrender.com/api/users/${id}`,
+      `https://shopper-api.vercel.app/api/users/${id}`,
       config
     );
 
@@ -138,7 +138,7 @@ export const updateUserDetails = (user) => async (dispatch, getState) => {
       },
     };
     const { data } = await axios.put(
-      `https://shopper-wmd5.onrender.com/api/users/profile`,
+      `https://shopper-api.vercel.app/api/users/profile`,
       user,
       config
     );
@@ -176,7 +176,7 @@ export const listUser = () => async (dispatch, getState) => {
       },
     };
     const { data } = await axios.get(
-      `https://shopper-wmd5.onrender.com/api/users/`,
+      `https://shopper-api.vercel.app/api/users/`,
       config
     );
 
@@ -213,7 +213,7 @@ export const deleteUser = (id) => async (dispatch, getState) => {
       },
     };
     await axios.delete(
-      `https://shopper-wmd5.onrender.com/api/users/${id}`,
+      `https://shopper-api.vercel.app/api/users/${id}`,
       config
     );
 
@@ -250,7 +250,7 @@ export const updateUser = (user) => async (dispatch, getState) => {
       },
     };
     const { data } = await axios.put(
-      `https://shopper-wmd5.onrender.com/api/users/${user._id}`,
+      `https://shopper-api.vercel.app/api/users/${user._id}`,
       user,
       config
     );
