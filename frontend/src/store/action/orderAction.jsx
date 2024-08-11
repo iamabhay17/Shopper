@@ -19,7 +19,7 @@ export const createOrder = (order) => async (dispatch, getState) => {
       },
     };
     const { data } = await axios.post(
-      `https://shopper-wmd5.onrender.com/api/orders`,
+      `https://shopper-api.vercel.app/api/orders`,
       order,
       config
     );
@@ -57,7 +57,7 @@ export const getOrderDetails = (id) => async (dispatch, getState) => {
       },
     };
     const { data } = await axios.get(
-      `https://shopper-wmd5.onrender.com/api/orders/${id}`,
+      `https://shopper-api.vercel.app/api/orders/${id}`,
       config
     );
 
@@ -96,7 +96,7 @@ export const payOrder = (id, paymentResult) => async (dispatch, getState) => {
       },
     };
     const { data } = await axios.put(
-      `https://shopper-wmd5.onrender.com/api/orders/${id}/pay`,
+      `https://shopper-api.vercel.app/api/orders/${id}/pay`,
       paymentResult,
       config
     );
@@ -134,7 +134,7 @@ export const listMyOrders = () => async (dispatch, getState) => {
       },
     };
     const { data } = await axios.get(
-      `https://shopper-wmd5.onrender.com/api/orders/myorders`,
+      `https://shopper-api.vercel.app/api/orders/myorders`,
       config
     );
 
@@ -171,7 +171,7 @@ export const listOrders = () => async (dispatch, getState) => {
       },
     };
     const { data } = await axios.get(
-      `https://shopper-wmd5.onrender.com/api/orders/`,
+      `https://shopper-api.vercel.app/api/orders/`,
       config
     );
 
@@ -208,7 +208,7 @@ export const deliverOrder = (order) => async (dispatch, getState) => {
       },
     };
     await axios.put(
-      `https://shopper-wmd5.onrender.com/api/orders/${order._id}/deliver`,
+      `https://shopper-api.vercel.app/api/orders/${order._id}/deliver`,
       config
     );
 
